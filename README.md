@@ -1,5 +1,19 @@
 # DOSW\_Lab2.7
 
+## Reto 6: Habla con soporte tecnico
+
+**Patron de diseño:** De comportamiento
+
+**Patron utilizado:** Chain of responsability
+
+### Justificacion
+
+En este caso se utilizo este patron de diseño por como esta abordado el problema, pues digamos que al tener que manejar los distintos niveles de prioridad este puede ir escalando como lo hace en cadena de responsabilidad
+
+### Como lo aplico
+
+---
+
 implementacion del reto 7 de la parte 3 del laboratorio
 
 
