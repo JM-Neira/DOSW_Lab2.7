@@ -12,67 +12,34 @@ En este caso se utilizo este patron de diseño por como esta abordado el problem
 
 ### Como lo aplico
 
+![reto6](./resources/reto6.png)
+
 ---
 
-implementacion del reto 7 de la parte 3 del laboratorio
+## Reto 7: El control remoto mágico
 
+**Patrón de diseño:** De comportamiento  
+**Patrón utilizado:** Command  
 
+### Justificación  
 
-Patrón de Diseño Utilizado
+Se utilizó el patrón Command porque cada acción del control remoto se encapsula como un objeto independiente que puede ejecutarse y deshacerse. Esto permite desacoplar el control remoto de los dispositivos, registrar un historial de acciones y agregar nuevas funcionalidades sin modificar la estructura existente.
 
-Categoría: Patrones de Comportamiento (Behavioral Patterns)
+### Como lo aplico
 
-Patrón: Command (Comando)
+![reto7](./resources/reto7.png)
 
+---
 
+## Reto 8: El zoológico de los UML
 
-En este reto, necesitábamos:
+**Patrón de diseño:** Estructural  
+**Patrón utilizado:** Decorator  
 
+### Justificación  
 
+Se utilizó el patrón Decorator para agregar atributos dinámicos a los animales sin modificar la clase base. Este patrón permite extender funcionalidades en tiempo de ejecución, combinar múltiples características adicionales y cumplir con el principio Open/Closed.
 
-Ejecutar acciones sobre diferentes dispositivos (luces, puertas, música, persianas)
+### Como lo aplico
 
-Deshacer acciones para revertir configuraciones incorrectas
-
-Mantener un historial de quién hizo qué acción
-
-Investigar quién desconfiguró los electrodomésticos
-
-
-
-El patrón Command es perfecto para este escenario porque:
-
-
-
-Separa la solicitud de ejecución de la ejecución misma
-
-Cada comando guarda su estado anterior, permitiendo el "undo"
-
-Los comandos se pueden almacenar en un historial
-
-Nuevos comandos se pueden agregar sin modificar código existente
-
-
-
-
-
-Comandos Concretos (Comandos.java)
-
-Cada comando concreto implementa la interfaz Comando y encapsula:
-
-
-
-Una referencia al receptor (dispositivo)
-
-Los parámetros necesarios para la acción
-
-El estado anterior para poder deshacer
-
-El usuario que ejecuta el commando
-
-
-
-Receptores (Receivers) (Dispositivos.java)
-
-Los receptores son los objetos que realmente realizan el trabajo. Cada dispositivo tiene sus propios métodos y estado.
-
+![reto8](./resources/reto8.png)
