@@ -1,64 +1,45 @@
 # DOSW\_Lab2.7
 
-implementacion del reto 7 de la parte 3 del laboratorio
+## Reto 6: Habla con soporte tecnico
 
+**Patron de diseño:** De comportamiento
 
+**Patron utilizado:** Chain of responsability
 
-Patrón de Diseño Utilizado
+### Justificacion
 
-Categoría: Patrones de Comportamiento (Behavioral Patterns)
+En este caso se utilizo este patron de diseño por como esta abordado el problema, pues digamos que al tener que manejar los distintos niveles de prioridad este puede ir escalando como lo hace en cadena de responsabilidad
 
-Patrón: Command (Comando)
+### Como lo aplico
 
+![reto6](./resources/reto6.png)
 
+---
 
-En este reto, necesitábamos:
+## Reto 7: El control remoto mágico
 
+**Patrón de diseño:** De comportamiento  
+**Patrón utilizado:** Command  
 
+### Justificación  
 
-Ejecutar acciones sobre diferentes dispositivos (luces, puertas, música, persianas)
+Se utilizó el patrón Command porque cada acción del control remoto se encapsula como un objeto independiente que puede ejecutarse y deshacerse. Esto permite desacoplar el control remoto de los dispositivos, registrar un historial de acciones y agregar nuevas funcionalidades sin modificar la estructura existente.
 
-Deshacer acciones para revertir configuraciones incorrectas
+### Como lo aplico
 
-Mantener un historial de quién hizo qué acción
+![reto7](./resources/reto7.png)
 
-Investigar quién desconfiguró los electrodomésticos
+---
 
+## Reto 8: El zoológico de los UML
 
+**Patrón de diseño:** Estructural  
+**Patrón utilizado:** Decorator  
 
-El patrón Command es perfecto para este escenario porque:
+### Justificación  
 
+Se utilizó el patrón Decorator para agregar atributos dinámicos a los animales sin modificar la clase base. Este patrón permite extender funcionalidades en tiempo de ejecución, combinar múltiples características adicionales y cumplir con el principio Open/Closed.
 
+### Como lo aplico
 
-Separa la solicitud de ejecución de la ejecución misma
-
-Cada comando guarda su estado anterior, permitiendo el "undo"
-
-Los comandos se pueden almacenar en un historial
-
-Nuevos comandos se pueden agregar sin modificar código existente
-
-
-
-
-
-Comandos Concretos (Comandos.java)
-
-Cada comando concreto implementa la interfaz Comando y encapsula:
-
-
-
-Una referencia al receptor (dispositivo)
-
-Los parámetros necesarios para la acción
-
-El estado anterior para poder deshacer
-
-El usuario que ejecuta el commando
-
-
-
-Receptores (Receivers) (Dispositivos.java)
-
-Los receptores son los objetos que realmente realizan el trabajo. Cada dispositivo tiene sus propios métodos y estado.
-
+![reto8](./resources/reto8.png)
